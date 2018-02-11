@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="js/eventos.js"></script>
+<link rel="stylesheet" type="text/css" href="css/estilos.css" media="screen"/>
+</head>
+<body>
+<div class="empujaDerecha empujaAbajo" id="mainContent">
+
+	<h1 class="margin-bottom-100">Editor texto enriquecido con fuente personalizada 
+	                       - Tecnologías del Cliente Web - Piero Rospigliosi</h1>
+	                       
+	<button class="boton" onclick="hazmeNegrita()">Negrita</button>
+	<span>Fuente:</span>
+	<select onchange="cambiarFuente(this[this.selectedIndex].value)">
+ 	   <option value="Arial">Arial</option>
+    	<option value="Calibri">Calibri</option>
+    	<option value="Comic Sans MS">Comic Sans MS</option>				
+    	<option value="locurasEmperadorFont">Locuras del emperador</option>				
+	</select>
+	<span>Tamaño:</span>
+	<select onchange="cambiarTamañoFuente(this[this.selectedIndex].value)">
+ 	   <option value="12">12</option>
+    	<option value="20">20</option>
+    	<option value="24">24</option>				
+    	<option value="30">30</option>				
+	</select>
+	<span>Color:</span>
+	<select onchange="cambiarColorFuente(this[this.selectedIndex].value)">
+ 	   <option value="blue">Azul</option>
+    	<option value="black">Negro</option>
+    	<option value="yellow">Amarillo</option>				
+    	<option value="red">Rojo</option>				
+	</select>
+	<button class="boton" onclick="insertaListaOrdenada()">Lista</button>
+	<button class="boton" onclick="centra()">Centrar</button>
+	<button class="boton" onclick="justificaDerecha()">Justifica derecha</button>
+	<button class="boton" onclick="justificaIzquierda()">Justifica izquierda</button>
+	<span>Cabecera</span>
+	<select onchange="formatoCabecera(this[this.selectedIndex].value)">
+ 	   <option value="<h1>">H1</option>
+    	<option value="<h2>">H2</option>
+    	<option value="<h3>">H3</option>				
+    	<option value="<h4>">H4</option>				
+    	<option value="<h5>">H5</option>				
+    	<option value="<h6>">H6</option>				
+	</select>
+	<div id="editorDiv" class="">
+	 	<section contenteditable="true" id="textAreaId">
+	 	<span>Este es el texto inicial que puedes editar a manera de ejemplo</span>
+	 	 </section>
+	</div>
+	<br><br><br><br><br><br><br><br><br><br><br>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+
+funcionInicial () 
+
+</script>

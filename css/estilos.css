@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+@font-face {
+ font-family: 'goodVibesExterno';
+ src: url(../fuentes/GoodVibes.ttf);
+}
+
+@font-face {
+ font-family: 'locurasEmperadorFont';
+ src: url(../fuentes/locurasEmperador.TTF);
+}
+
+
+body {
+	//background-color: black;
+}
+
+h1{
+	font-family: 'locurasEmperadorFont';
+}
+
+#mainContent {
+  //margin : 100px;
+}
+
+#editorDiv {
+  width: 80%;
+  height: 180%;
+}
+#textAreaId  {
+  width: 80%;
+  height: 20em;
+  border: 2px #2ECCFA solid;
+  border-width: thin;
+  padding: 10px;
+  overflow: scroll;
+  background-color: white;
+}
+
+.boton{
+	border-radius: 15px;
+}
+.centrar {
+    margin: auto;
+    width: 80%;
+    padding: 50px;
+}
+
+.empujaDerecha {
+	padding-left: 180px;
+}
+
+.empujaAbajo {
+	padding-top: 100px;
+}
+
+.margin-bottom-100 {
+	margin-bottom: 100px;
+}
